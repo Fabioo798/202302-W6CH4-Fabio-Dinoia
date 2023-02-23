@@ -46,3 +46,23 @@ Para iniciar la API, el programa debe mostrarle al usuario las siguientes pregun
 Pruebas
 Producción
 ¿Quieres permitir que los clientes puedan crear, borrar y modificar? (respuesta de sí o no)
+
+## Stopper
+
+when implement GET with id, it compiles and it open the server run on port, but when i inser an id this error occur:
+
+```node.js
+ode:_http_outgoing:644
+    throw new ERR_HTTP_HEADERS_SENT('set');
+    ^
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:387:5)
+    at ServerResponse.setHeader (node:_http_outgoing:644:11)
+    at Server.<anonymous> (file:///C:/Users/Fabio/OneDrive%20-%20students.uninettunouniversity.net/Documenti/ISDI%20-%20Curso/202302-w6ch4-fabio-dinoia/dist/index.js:24:11)
+    at Server.emit (node:events:513:28)
+    at parserOnIncoming (node:_http_server:998:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+```
