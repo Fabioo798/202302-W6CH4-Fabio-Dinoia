@@ -1,5 +1,7 @@
 # Week 6 - Challenge 4
+
 ### Calculadora WebService
+
 Crea una calculadora en Node en forma de web.
 
 El programa debe recibir dos números por query params (p.e. http://localhost:8000/calculator?a=6&b=3), y devolver el siguiente HTML:
@@ -10,7 +12,7 @@ El programa debe recibir dos números por query params (p.e. http://localhost:80
 
 6 - 3 = 3
 
-6 * 3 = 18
+6 \* 3 = 18
 
 6 / 3 = 2
 
@@ -21,9 +23,11 @@ La app debe abrirse en un puerto por defecto que esté configurado como variable
 Si la request no va a /calculator, la app debe responder con un 404.
 
 ### Opción extra
+
 Recoger los números en un formulario y recalcular los valores, utilizando SOLO vanila TS
 
 # API REST Things I already know
+
 Crea una API REST que se conecte a un fichero JSON, para manipular recursos de tipo cosas que ya sé. El JSON tendrá una sola propiedad de tipo array, donde almacenarán objetos que representarán cosas que hemos aprendido en el bootcamp. Duplica el fichero JSON de datos para que una sea la de pruebas y otra la de producción.
 
 La API REST debe tener los siguientes endpoints:
@@ -39,6 +43,7 @@ La API REST debe tener los siguientes endpoints:
 [PATCH] /things -> modifica una cosa que ya sé (la recibe en el body)
 
 ### Opción extra
+
 Para iniciar la API, el programa debe mostrarle al usuario las siguientes preguntas (utiliza el paquete inquirer):
 
 ¿En qué puerto quieres que se inicie la API? (respuesta por defecto: 4000)
